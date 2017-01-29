@@ -14,7 +14,7 @@
   </defs>
   <title>pattern-bg</title>
 <g id="pattern">
-  <g id="FILLER">
+  <g id="FILLER" class="filler-layer">
     <g>
       <path class="cls-1" d="M1401.63,752.89a12.5,12.5,0,1,0-12.5,12.5A12.51,12.51,0,0,0,1401.63,752.89Zm-3,0a9.5,9.5,0,1,1-9.5-9.5A9.51,9.51,0,0,1,1398.63,752.89Z"/>
       <circle class="cls-1" cx="1399.13" cy="762.89" r="11"/>
@@ -813,16 +813,18 @@
   <g id="WORK" class="animated-layer layer-work">
     <g>
       <g>
-        <line class="cls-1" x1="18.61" y1="772.23" x2="27.89" y2="762.94"/>
-        <rect class="cls-1" x="16.68" y="766.08" width="13.13" height="3" transform="translate(-535.95 241.26) rotate(-45)"/>
-      </g>
-      <g>
-        <line class="cls-1" x1="27.89" y1="743.56" x2="18.61" y2="752.85"/>
-        <rect class="cls-1" x="16.68" y="746.7" width="13.13" height="3" transform="translate(-522.25 235.58) rotate(-45)"/>
-      </g>
-      <g>
-        <line class="cls-1" x1="37.83" y1="772.23" x2="9.17" y2="743.56"/>
-        <rect class="cls-1" x="22" y="737.62" width="3" height="40.54" transform="translate(-529.02 238.59) rotate(-45)"/>
+        <g>
+          <line class="cls-1" x1="18.61" y1="772.23" x2="27.89" y2="762.94"/>
+          <rect class="cls-1" x="16.68" y="766.08" width="13.13" height="3" transform="translate(-535.95 241.26) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="27.89" y1="743.56" x2="18.61" y2="752.85"/>
+          <rect class="cls-1" x="16.68" y="746.7" width="13.13" height="3" transform="translate(-522.25 235.58) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="37.83" y1="772.23" x2="9.17" y2="743.56"/>
+          <rect class="cls-1" x="22" y="737.62" width="3" height="40.54" transform="translate(-529.02 238.59) rotate(-45)"/>
+        </g>
       </g>
     </g>
     <g class="pattern-node">
@@ -937,16 +939,18 @@
     </g>
     <g>
       <g>
-        <line class="cls-1" x1="1923.61" y1="772.23" x2="1932.89" y2="762.94"/>
-        <rect class="cls-1" x="1921.68" y="766.08" width="13.13" height="3" transform="translate(22.01 1588.3) rotate(-45)"/>
-      </g>
-      <g>
-        <line class="cls-1" x1="1932.89" y1="743.56" x2="1923.61" y2="752.85"/>
-        <rect class="cls-1" x="1921.68" y="746.7" width="13.13" height="3" transform="translate(35.71 1582.62) rotate(-45)"/>
-      </g>
-      <g>
-        <line class="cls-1" x1="1942.83" y1="772.23" x2="1914.17" y2="743.56"/>
-        <rect class="cls-1" x="1927" y="737.62" width="3" height="40.54" transform="translate(28.93 1585.62) rotate(-45)"/>
+        <g>
+          <line class="cls-1" x1="1923.61" y1="772.23" x2="1932.89" y2="762.94"/>
+          <rect class="cls-1" x="1921.68" y="766.08" width="13.13" height="3" transform="translate(22.01 1588.3) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="1932.89" y1="743.56" x2="1923.61" y2="752.85"/>
+          <rect class="cls-1" x="1921.68" y="746.7" width="13.13" height="3" transform="translate(35.71 1582.62) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="1942.83" y1="772.23" x2="1914.17" y2="743.56"/>
+          <rect class="cls-1" x="1927" y="737.62" width="3" height="40.54" transform="translate(28.93 1585.62) rotate(-45)"/>
+        </g>
       </g>
     </g>
     <g class="pattern-node">

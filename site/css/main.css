@@ -177,6 +177,22 @@ table {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes pulse {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); } }
+
+@keyframes pulse {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); } }
+
 * {
   box-sizing: border-box; }
 
@@ -249,14 +265,19 @@ a {
     height: 100vh;
     padding: 10px 5px 5px 10px; }
     .background-container svg .animated-layer > g.pattern-node > * {
-      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
-      transition: -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
-      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
-      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      opacity: 1;
+      -webkit-transition: opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      transition: opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.35s ease;
+      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
       -webkit-transform-origin: center center;
           -ms-transform-origin: center center;
-              transform-origin: center center; }
+              transform-origin: center center;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
     .background-container svg .animated-layer > g.pattern-node > .pattern-node-word {
+      opacity: 0;
       -webkit-transform: scale(0);
           -ms-transform: scale(0);
               transform: scale(0); }
@@ -264,42 +285,964 @@ a {
 .page-container.work-panel-active + .background-container svg .layer-work > g.pattern-node > * {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
-          transform: scale(0); }
+          transform: scale(0);
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0; }
 
 .page-container.work-panel-active + .background-container svg .layer-work > g.pattern-node > .pattern-node-word {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  opacity: 1; }
 
 .page-container.about-panel-active + .background-container svg .layer-about > g.pattern-node > * {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
-          transform: scale(0); }
+          transform: scale(0);
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0; }
 
 .page-container.about-panel-active + .background-container svg .layer-about > g.pattern-node > .pattern-node-word {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  opacity: 1; }
 
 .page-container.focus-panel-active + .background-container svg .layer-focus > g.pattern-node > * {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
-          transform: scale(0); }
+          transform: scale(0);
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0; }
 
 .page-container.focus-panel-active + .background-container svg .layer-focus > g.pattern-node > .pattern-node-word {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  opacity: 1; }
 
 .page-container.contact-panel-active + .background-container svg .layer-contact > g.pattern-node > * {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
-          transform: scale(0); }
+          transform: scale(0);
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0; }
 
 .page-container.contact-panel-active + .background-container svg .layer-contact > g.pattern-node > .pattern-node-word {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  opacity: 1; }
+
+.page-container + .background-container svg .filler-layer,
+.page-container + .background-container svg .animated-layer {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(1) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(1) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.5976s;
+            animation-delay: 2.5976s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(2) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(2) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.3312s;
+            animation-delay: 3.3312s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(3) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(3) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.63s;
+            animation-delay: 0.63s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(4) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(4) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.1284s;
+            animation-delay: 1.1284s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(5) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(5) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.1363s;
+            animation-delay: 3.1363s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(6) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(6) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.096s;
+            animation-delay: 0.096s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(7) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(7) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.1646s;
+            animation-delay: 2.1646s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(8) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(8) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.0532s;
+            animation-delay: 2.0532s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(9) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(9) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.0044s;
+            animation-delay: 3.0044s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(10) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(10) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.47s;
+            animation-delay: 2.47s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(11) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(11) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.9488s;
+            animation-delay: 1.9488s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(12) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(12) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.5498s;
+            animation-delay: 1.5498s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(13) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(13) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.8565s;
+            animation-delay: 1.8565s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(14) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(14) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.31s;
+            animation-delay: 1.31s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(15) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(15) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.7219s;
+            animation-delay: 3.7219s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(16) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(16) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.6032s;
+            animation-delay: 0.6032s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(17) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(17) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.288s;
+            animation-delay: 1.288s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(18) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(18) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.653s;
+            animation-delay: 1.653s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(19) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(19) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.648s;
+            animation-delay: 0.648s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(20) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(20) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.4012s;
+            animation-delay: 2.4012s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(21) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(21) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.4992s;
+            animation-delay: 2.4992s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(22) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(22) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.377s;
+            animation-delay: 0.377s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(23) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(23) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.6808s;
+            animation-delay: 0.6808s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(24) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(24) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.8832s;
+            animation-delay: 0.8832s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(25) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(25) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.7422s;
+            animation-delay: 3.7422s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(26) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(26) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.4932s;
+            animation-delay: 0.4932s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(27) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(27) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.629s;
+            animation-delay: 0.629s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(28) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(28) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.585s;
+            animation-delay: 0.585s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(29) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(29) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.0887s;
+            animation-delay: 3.0887s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(30) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(30) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.485s;
+            animation-delay: 1.485s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(31) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(31) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.223s;
+            animation-delay: 0.223s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(32) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(32) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.9625s;
+            animation-delay: 0.9625s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(33) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(33) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.3835s;
+            animation-delay: 3.3835s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(34) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(34) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.999s;
+            animation-delay: 0.999s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(35) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(35) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.3299s;
+            animation-delay: 1.3299s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(36) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(36) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.0904s;
+            animation-delay: 2.0904s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(37) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(37) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.5472s;
+            animation-delay: 0.5472s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(38) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(38) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.042s;
+            animation-delay: 3.042s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(39) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(39) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.0418s;
+            animation-delay: 0.0418s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(40) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(40) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(41) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(41) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.5548s;
+            animation-delay: 1.5548s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(42) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(42) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.77s;
+            animation-delay: 3.77s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(43) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(43) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.6523s;
+            animation-delay: 1.6523s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(44) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(44) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.9008s;
+            animation-delay: 1.9008s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(45) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(45) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.27s;
+            animation-delay: 2.27s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(46) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(46) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.4068s;
+            animation-delay: 3.4068s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(47) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(47) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.278s;
+            animation-delay: 2.278s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(48) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(48) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.8981s;
+            animation-delay: 1.8981s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(49) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(49) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.3177s;
+            animation-delay: 2.3177s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(50) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(50) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.2676s;
+            animation-delay: 3.2676s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(51) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(51) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 4.1448s;
+            animation-delay: 4.1448s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(52) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(52) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.692s;
+            animation-delay: 1.692s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(53) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(53) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.1825s;
+            animation-delay: 2.1825s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(54) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(54) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.6351s;
+            animation-delay: 3.6351s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(55) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(55) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.2032s;
+            animation-delay: 3.2032s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(56) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(56) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 4.9929s;
+            animation-delay: 4.9929s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(57) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(57) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.519s;
+            animation-delay: 1.519s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(58) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(58) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.782s;
+            animation-delay: 1.782s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(59) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(59) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.5968s;
+            animation-delay: 0.5968s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(60) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(60) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.0443s;
+            animation-delay: 0.0443s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(61) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(61) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.8991s;
+            animation-delay: 2.8991s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(62) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(62) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.1107s;
+            animation-delay: 0.1107s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(63) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(63) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.8274s;
+            animation-delay: 0.8274s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(64) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(64) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.0619s;
+            animation-delay: 1.0619s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(65) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(65) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 4.8918s;
+            animation-delay: 4.8918s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(66) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(66) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.4167s;
+            animation-delay: 1.4167s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(67) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(67) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.4752s;
+            animation-delay: 0.4752s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(68) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(68) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.9737s;
+            animation-delay: 1.9737s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(69) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(69) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.4308s;
+            animation-delay: 0.4308s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(70) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(70) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.948s;
+            animation-delay: 3.948s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(71) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(71) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.87s;
+            animation-delay: 2.87s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(72) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(72) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.4416s;
+            animation-delay: 1.4416s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(73) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(73) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.8463s;
+            animation-delay: 0.8463s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(74) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(74) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.989s;
+            animation-delay: 0.989s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(75) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(75) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.415s;
+            animation-delay: 2.415s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(76) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(76) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.9061s;
+            animation-delay: 3.9061s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(77) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(77) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.8525s;
+            animation-delay: 1.8525s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(78) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(78) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 5.8006s;
+            animation-delay: 5.8006s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(79) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(79) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.3003s;
+            animation-delay: 3.3003s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(80) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(80) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.02s;
+            animation-delay: 2.02s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(81) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(81) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.8874s;
+            animation-delay: 0.8874s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(82) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(82) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.637s;
+            animation-delay: 2.637s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(83) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(83) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.9795s;
+            animation-delay: 2.9795s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(84) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(84) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 5.0292s;
+            animation-delay: 5.0292s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(85) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(85) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.19s;
+            animation-delay: 3.19s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(86) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(86) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.1816s;
+            animation-delay: 0.1816s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(87) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(87) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.579s;
+            animation-delay: 0.579s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(88) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(88) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(89) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(89) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 4.8708s;
+            animation-delay: 4.8708s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(90) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(90) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.113s;
+            animation-delay: 0.113s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(91) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(91) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.7047s;
+            animation-delay: 0.7047s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(92) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(92) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.0292s;
+            animation-delay: 1.0292s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(93) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(93) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.554s;
+            animation-delay: 1.554s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(94) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(94) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 2.0678s;
+            animation-delay: 2.0678s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(95) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(95) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 4.3813s;
+            animation-delay: 4.3813s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(96) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(96) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.3864s;
+            animation-delay: 0.3864s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(97) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(97) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.206s;
+            animation-delay: 1.206s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(98) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(98) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 3.024s;
+            animation-delay: 3.024s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(99) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(99) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 1.0411s;
+            animation-delay: 1.0411s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
+  .page-container + .background-container svg .filler-layer > g:nth-child(100) > *:not(.pattern-node-word),
+  .page-container + .background-container svg .animated-layer > g:nth-child(100) > *:not(.pattern-node-word) {
+    -webkit-animation: pulse 10s ease-out infinite;
+            animation: pulse 10s ease-out infinite;
+    -webkit-animation-delay: 0.3344s;
+            animation-delay: 0.3344s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center; }
 
 .panel {
   width: 100%;
