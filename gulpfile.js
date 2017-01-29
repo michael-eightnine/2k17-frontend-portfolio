@@ -77,20 +77,14 @@ gulp.task('images', function(){
 	.pipe(gulp.dest('dist/img'))
 });
 
-//copy DOM for build
-gulp.task('copyDOM', function() {
-	return gulp.src('site/index.html')
-	.pipe(gulp.dest('dist'))
-})
-
 //BUILD!
 gulp.task('build', function(callback) {
 	runSequence(
 		'clean:dist',
+		'generateDOM',
 		'sass',
-		'injectDOM',
 		'useref',
-		['images', 'copyDOM', 'projects'],
+		['images'],
 		callback
 	)
 })
