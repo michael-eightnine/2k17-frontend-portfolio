@@ -1,0 +1,40 @@
+.background-container {
+	position: fixed;
+  top: 0;
+  left: 0;
+	z-index: -1;
+  width: 100vw;
+  height: 100vh;
+	overflow: hidden;
+
+	//actual pattern
+	svg {
+		display: block;
+		height: 100vh;
+		padding: 10px 5px 5px 10px;
+
+		//onload for pattern nodes
+		.animated-layer {
+			& > g.pattern-node {
+				//add transition for scale transforms
+				& > * {
+					transition: transform .5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+					transform-origin: center center;
+				}
+
+				//hide section words
+				& > .pattern-node-word {
+					transform: scale(0);
+				}
+			}
+		}
+	}
+}
+
+//animate based on container state
+.page-container {
+	@include backgroundSwitch(work);
+	@include backgroundSwitch(about);
+	@include backgroundSwitch(focus);
+	@include backgroundSwitch(contact);
+}
