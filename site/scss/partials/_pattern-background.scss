@@ -18,10 +18,9 @@
 			& > g.pattern-node {
 				//add transition for scale transforms
 				& > * {
-					opacity: 1;
-					transition: transform .5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity .35s ease;
+					transition: transform .5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity .5s ease;
 					transform-origin: center center;
-
+					opacity: 1;
 					transform: scale(1);
 				}
 

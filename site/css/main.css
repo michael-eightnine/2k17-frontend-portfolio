@@ -31,6 +31,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.relative {
+  position: relative; }
+
 @-webkit-keyframes leftSlide {
   0 {
     -webkit-transform: translateX(-200px);
@@ -240,6 +243,8 @@ a {
         display: none; }
     .link-list.horizontal li a {
       padding: 3px 5px; }
+  .link-list.horizontal.no-dots li:before {
+    display: none; }
 
 .link-list.vertical {
   text-align: left; }
@@ -265,14 +270,14 @@ a {
     height: 100vh;
     padding: 10px 5px 5px 10px; }
     .background-container svg .animated-layer > g.pattern-node > * {
-      opacity: 1;
-      -webkit-transition: opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
-      transition: opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
-      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.35s ease;
-      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.35s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      transition: opacity 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
+      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.5s ease;
+      transition: transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29), opacity 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.52, -0.21, 0.28, 1.29);
       -webkit-transform-origin: center center;
           -ms-transform-origin: center center;
               transform-origin: center center;
+      opacity: 1;
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
@@ -347,8 +352,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(1) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.5976s;
-            animation-delay: 2.5976s;
+    -webkit-animation-delay: 3.692s;
+            animation-delay: 3.692s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -356,8 +361,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(2) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.3312s;
-            animation-delay: 3.3312s;
+    -webkit-animation-delay: 3.4706s;
+            animation-delay: 3.4706s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -365,8 +370,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(3) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.63s;
-            animation-delay: 0.63s;
+    -webkit-animation-delay: 1.666s;
+            animation-delay: 1.666s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -374,8 +379,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(4) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.1284s;
-            animation-delay: 1.1284s;
+    -webkit-animation-delay: 0.8658s;
+            animation-delay: 0.8658s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -383,8 +388,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(5) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.1363s;
-            animation-delay: 3.1363s;
+    -webkit-animation-delay: 1.4874s;
+            animation-delay: 1.4874s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -392,8 +397,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(6) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.096s;
-            animation-delay: 0.096s;
+    -webkit-animation-delay: 3.0975s;
+            animation-delay: 3.0975s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -401,8 +406,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(7) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.1646s;
-            animation-delay: 2.1646s;
+    -webkit-animation-delay: 1.2495s;
+            animation-delay: 1.2495s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -410,8 +415,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(8) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.0532s;
-            animation-delay: 2.0532s;
+    -webkit-animation-delay: 0.7395s;
+            animation-delay: 0.7395s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -419,8 +424,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(9) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.0044s;
-            animation-delay: 3.0044s;
+    -webkit-animation-delay: 3.492s;
+            animation-delay: 3.492s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -428,8 +433,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(10) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.47s;
-            animation-delay: 2.47s;
+    -webkit-animation-delay: 0.546s;
+            animation-delay: 0.546s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -437,8 +442,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(11) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.9488s;
-            animation-delay: 1.9488s;
+    -webkit-animation-delay: 2.9253s;
+            animation-delay: 2.9253s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -446,8 +451,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(12) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.5498s;
-            animation-delay: 1.5498s;
+    -webkit-animation-delay: 1.06s;
+            animation-delay: 1.06s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -455,8 +460,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(13) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.8565s;
-            animation-delay: 1.8565s;
+    -webkit-animation-delay: 3.318s;
+            animation-delay: 3.318s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -464,8 +469,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(14) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.31s;
-            animation-delay: 1.31s;
+    -webkit-animation-delay: 0.5814s;
+            animation-delay: 0.5814s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -473,8 +478,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(15) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.7219s;
-            animation-delay: 3.7219s;
+    -webkit-animation-delay: 1.173s;
+            animation-delay: 1.173s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -482,8 +487,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(16) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.6032s;
-            animation-delay: 0.6032s;
+    -webkit-animation-delay: 0.7735s;
+            animation-delay: 0.7735s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -491,8 +496,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(17) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.288s;
-            animation-delay: 1.288s;
+    -webkit-animation-delay: 3.661s;
+            animation-delay: 3.661s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -500,8 +505,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(18) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.653s;
-            animation-delay: 1.653s;
+    -webkit-animation-delay: 1.1466s;
+            animation-delay: 1.1466s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -509,8 +514,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(19) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.648s;
-            animation-delay: 0.648s;
+    -webkit-animation-delay: 0.3317s;
+            animation-delay: 0.3317s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -518,8 +523,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(20) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.4012s;
-            animation-delay: 2.4012s;
+    -webkit-animation-delay: 2.89s;
+            animation-delay: 2.89s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -527,8 +532,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(21) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.4992s;
-            animation-delay: 2.4992s;
+    -webkit-animation-delay: 0.4448s;
+            animation-delay: 0.4448s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -536,8 +541,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(22) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.377s;
-            animation-delay: 0.377s;
+    -webkit-animation-delay: 1.0962s;
+            animation-delay: 1.0962s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -545,8 +550,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(23) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.6808s;
-            animation-delay: 0.6808s;
+    -webkit-animation-delay: 1.8391s;
+            animation-delay: 1.8391s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -554,8 +559,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(24) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.8832s;
-            animation-delay: 0.8832s;
+    -webkit-animation-delay: 0.1005s;
+            animation-delay: 0.1005s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -563,8 +568,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(25) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.7422s;
-            animation-delay: 3.7422s;
+    -webkit-animation-delay: 4.0936s;
+            animation-delay: 4.0936s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -572,8 +577,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(26) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.4932s;
-            animation-delay: 0.4932s;
+    -webkit-animation-delay: 0.297s;
+            animation-delay: 0.297s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -581,8 +586,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(27) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.629s;
-            animation-delay: 0.629s;
+    -webkit-animation-delay: 0.3213s;
+            animation-delay: 0.3213s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -590,8 +595,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(28) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.585s;
-            animation-delay: 0.585s;
+    -webkit-animation-delay: 0.0495s;
+            animation-delay: 0.0495s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -599,8 +604,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(29) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.0887s;
-            animation-delay: 3.0887s;
+    -webkit-animation-delay: 1.8252s;
+            animation-delay: 1.8252s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -608,8 +613,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(30) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.485s;
-            animation-delay: 1.485s;
+    -webkit-animation-delay: 1.1775s;
+            animation-delay: 1.1775s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -617,8 +622,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(31) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.223s;
-            animation-delay: 0.223s;
+    -webkit-animation-delay: 0.945s;
+            animation-delay: 0.945s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -626,8 +631,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(32) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.9625s;
-            animation-delay: 0.9625s;
+    -webkit-animation-delay: 3.1122s;
+            animation-delay: 3.1122s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -635,8 +640,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(33) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.3835s;
-            animation-delay: 3.3835s;
+    -webkit-animation-delay: 3.2805s;
+            animation-delay: 3.2805s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -644,8 +649,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(34) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.999s;
-            animation-delay: 0.999s;
+    -webkit-animation-delay: 1.503s;
+            animation-delay: 1.503s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -653,8 +658,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(35) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.3299s;
-            animation-delay: 1.3299s;
+    -webkit-animation-delay: 1.3939s;
+            animation-delay: 1.3939s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -662,8 +667,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(36) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.0904s;
-            animation-delay: 2.0904s;
+    -webkit-animation-delay: 0.3542s;
+            animation-delay: 0.3542s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -671,8 +676,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(37) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.5472s;
-            animation-delay: 0.5472s;
+    -webkit-animation-delay: 1.1152s;
+            animation-delay: 1.1152s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -680,8 +685,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(38) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.042s;
-            animation-delay: 3.042s;
+    -webkit-animation-delay: 0.1661s;
+            animation-delay: 0.1661s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -689,8 +694,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(39) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.0418s;
-            animation-delay: 0.0418s;
+    -webkit-animation-delay: 1.3156s;
+            animation-delay: 1.3156s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -698,8 +703,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(40) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
+    -webkit-animation-delay: 1.3992s;
+            animation-delay: 1.3992s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -707,8 +712,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(41) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.5548s;
-            animation-delay: 1.5548s;
+    -webkit-animation-delay: 1.6284s;
+            animation-delay: 1.6284s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -716,8 +721,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(42) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.77s;
-            animation-delay: 3.77s;
+    -webkit-animation-delay: 3.7179s;
+            animation-delay: 3.7179s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -725,8 +730,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(43) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.6523s;
-            animation-delay: 1.6523s;
+    -webkit-animation-delay: 0.5181s;
+            animation-delay: 0.5181s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -734,8 +739,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(44) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.9008s;
-            animation-delay: 1.9008s;
+    -webkit-animation-delay: 1.1256s;
+            animation-delay: 1.1256s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -743,8 +748,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(45) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.27s;
-            animation-delay: 2.27s;
+    -webkit-animation-delay: 2.7368s;
+            animation-delay: 2.7368s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -752,8 +757,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(46) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.4068s;
-            animation-delay: 3.4068s;
+    -webkit-animation-delay: 0.8778s;
+            animation-delay: 0.8778s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -761,8 +766,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(47) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.278s;
-            animation-delay: 2.278s;
+    -webkit-animation-delay: 0.2016s;
+            animation-delay: 0.2016s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -770,8 +775,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(48) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.8981s;
-            animation-delay: 1.8981s;
+    -webkit-animation-delay: 1.3148s;
+            animation-delay: 1.3148s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -779,8 +784,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(49) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.3177s;
-            animation-delay: 2.3177s;
+    -webkit-animation-delay: 4.2282s;
+            animation-delay: 4.2282s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -788,8 +793,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(50) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.2676s;
-            animation-delay: 3.2676s;
+    -webkit-animation-delay: 0.507s;
+            animation-delay: 0.507s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -797,8 +802,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(51) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 4.1448s;
-            animation-delay: 4.1448s;
+    -webkit-animation-delay: 2.0532s;
+            animation-delay: 2.0532s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -806,8 +811,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(52) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.692s;
-            animation-delay: 1.692s;
+    -webkit-animation-delay: 1.4696s;
+            animation-delay: 1.4696s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -815,8 +820,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(53) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.1825s;
-            animation-delay: 2.1825s;
+    -webkit-animation-delay: 0.396s;
+            animation-delay: 0.396s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -824,8 +829,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(54) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.6351s;
-            animation-delay: 3.6351s;
+    -webkit-animation-delay: 2.3205s;
+            animation-delay: 2.3205s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -833,8 +838,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(55) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.2032s;
-            animation-delay: 3.2032s;
+    -webkit-animation-delay: 1.944s;
+            animation-delay: 1.944s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -842,8 +847,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(56) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 4.9929s;
-            animation-delay: 4.9929s;
+    -webkit-animation-delay: 2.223s;
+            animation-delay: 2.223s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -851,8 +856,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(57) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.519s;
-            animation-delay: 1.519s;
+    -webkit-animation-delay: 1.23s;
+            animation-delay: 1.23s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -860,8 +865,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(58) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.782s;
-            animation-delay: 1.782s;
+    -webkit-animation-delay: 1.1136s;
+            animation-delay: 1.1136s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -869,8 +874,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(59) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.5968s;
-            animation-delay: 0.5968s;
+    -webkit-animation-delay: 1.2772s;
+            animation-delay: 1.2772s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -878,8 +883,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(60) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.0443s;
-            animation-delay: 0.0443s;
+    -webkit-animation-delay: 3.6856s;
+            animation-delay: 3.6856s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -887,8 +892,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(61) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.8991s;
-            animation-delay: 2.8991s;
+    -webkit-animation-delay: 3.4272s;
+            animation-delay: 3.4272s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -896,8 +901,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(62) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.1107s;
-            animation-delay: 0.1107s;
+    -webkit-animation-delay: 1.9005s;
+            animation-delay: 1.9005s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -905,8 +910,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(63) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.8274s;
-            animation-delay: 0.8274s;
+    -webkit-animation-delay: 1.0027s;
+            animation-delay: 1.0027s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -914,8 +919,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(64) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.0619s;
-            animation-delay: 1.0619s;
+    -webkit-animation-delay: 0.208s;
+            animation-delay: 0.208s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -923,8 +928,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(65) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 4.8918s;
-            animation-delay: 4.8918s;
+    -webkit-animation-delay: 0.3255s;
+            animation-delay: 0.3255s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -932,8 +937,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(66) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.4167s;
-            animation-delay: 1.4167s;
+    -webkit-animation-delay: 1.9182s;
+            animation-delay: 1.9182s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -941,8 +946,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(67) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.4752s;
-            animation-delay: 0.4752s;
+    -webkit-animation-delay: 1.2506s;
+            animation-delay: 1.2506s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -950,8 +955,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(68) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.9737s;
-            animation-delay: 1.9737s;
+    -webkit-animation-delay: 1.3559s;
+            animation-delay: 1.3559s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -959,8 +964,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(69) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.4308s;
-            animation-delay: 0.4308s;
+    -webkit-animation-delay: 2.561s;
+            animation-delay: 2.561s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -968,8 +973,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(70) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.948s;
-            animation-delay: 3.948s;
+    -webkit-animation-delay: 1.1711s;
+            animation-delay: 1.1711s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -977,8 +982,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(71) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.87s;
-            animation-delay: 2.87s;
+    -webkit-animation-delay: 2.982s;
+            animation-delay: 2.982s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -986,8 +991,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(72) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.4416s;
-            animation-delay: 1.4416s;
+    -webkit-animation-delay: 1.848s;
+            animation-delay: 1.848s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -995,8 +1000,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(73) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.8463s;
-            animation-delay: 0.8463s;
+    -webkit-animation-delay: 0.2151s;
+            animation-delay: 0.2151s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1004,8 +1009,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(74) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.989s;
-            animation-delay: 0.989s;
+    -webkit-animation-delay: 1.4946s;
+            animation-delay: 1.4946s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1013,8 +1018,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(75) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.415s;
-            animation-delay: 2.415s;
+    -webkit-animation-delay: 3.4383s;
+            animation-delay: 3.4383s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1022,8 +1027,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(76) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.9061s;
-            animation-delay: 3.9061s;
+    -webkit-animation-delay: 0.7136s;
+            animation-delay: 0.7136s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1031,8 +1036,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(77) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.8525s;
-            animation-delay: 1.8525s;
+    -webkit-animation-delay: 1.0184s;
+            animation-delay: 1.0184s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1040,8 +1045,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(78) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 5.8006s;
-            animation-delay: 5.8006s;
+    -webkit-animation-delay: 0.7168s;
+            animation-delay: 0.7168s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1049,8 +1054,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(79) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.3003s;
-            animation-delay: 3.3003s;
+    -webkit-animation-delay: 1.2282s;
+            animation-delay: 1.2282s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1058,8 +1063,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(80) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.02s;
-            animation-delay: 2.02s;
+    -webkit-animation-delay: 0.116s;
+            animation-delay: 0.116s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1067,8 +1072,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(81) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.8874s;
-            animation-delay: 0.8874s;
+    -webkit-animation-delay: 3.132s;
+            animation-delay: 3.132s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1076,8 +1081,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(82) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.637s;
-            animation-delay: 2.637s;
+    -webkit-animation-delay: 3.7219s;
+            animation-delay: 3.7219s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1085,8 +1090,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(83) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.9795s;
-            animation-delay: 2.9795s;
+    -webkit-animation-delay: 1.2768s;
+            animation-delay: 1.2768s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1094,8 +1099,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(84) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 5.0292s;
-            animation-delay: 5.0292s;
+    -webkit-animation-delay: 1.0152s;
+            animation-delay: 1.0152s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1103,8 +1108,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(85) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.19s;
-            animation-delay: 3.19s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1112,8 +1117,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(86) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.1816s;
-            animation-delay: 0.1816s;
+    -webkit-animation-delay: 4.233s;
+            animation-delay: 4.233s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1121,8 +1126,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(87) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.579s;
-            animation-delay: 0.579s;
+    -webkit-animation-delay: 0.3549s;
+            animation-delay: 0.3549s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1130,8 +1135,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(88) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.25s;
-            animation-delay: 0.25s;
+    -webkit-animation-delay: 2.9768s;
+            animation-delay: 2.9768s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1139,8 +1144,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(89) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 4.8708s;
-            animation-delay: 4.8708s;
+    -webkit-animation-delay: 2.125s;
+            animation-delay: 2.125s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1148,8 +1153,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(90) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.113s;
-            animation-delay: 0.113s;
+    -webkit-animation-delay: 4.224s;
+            animation-delay: 4.224s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1157,8 +1162,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(91) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.7047s;
-            animation-delay: 0.7047s;
+    -webkit-animation-delay: 1.4925s;
+            animation-delay: 1.4925s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1166,8 +1171,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(92) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.0292s;
-            animation-delay: 1.0292s;
+    -webkit-animation-delay: 0.6052s;
+            animation-delay: 0.6052s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1175,8 +1180,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(93) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.554s;
-            animation-delay: 1.554s;
+    -webkit-animation-delay: 2.1896s;
+            animation-delay: 2.1896s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1184,8 +1189,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(94) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 2.0678s;
-            animation-delay: 2.0678s;
+    -webkit-animation-delay: 0.6545s;
+            animation-delay: 0.6545s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1193,8 +1198,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(95) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 4.3813s;
-            animation-delay: 4.3813s;
+    -webkit-animation-delay: 1.0422s;
+            animation-delay: 1.0422s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1202,8 +1207,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(96) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.3864s;
-            animation-delay: 0.3864s;
+    -webkit-animation-delay: 1.044s;
+            animation-delay: 1.044s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1211,8 +1216,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(97) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.206s;
-            animation-delay: 1.206s;
+    -webkit-animation-delay: 0.8938s;
+            animation-delay: 0.8938s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1220,8 +1225,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(98) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 3.024s;
-            animation-delay: 3.024s;
+    -webkit-animation-delay: 0.3675s;
+            animation-delay: 0.3675s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1229,8 +1234,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(99) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 1.0411s;
-            animation-delay: 1.0411s;
+    -webkit-animation-delay: 0.682s;
+            animation-delay: 0.682s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1238,8 +1243,8 @@ a {
   .page-container + .background-container svg .animated-layer > g:nth-child(100) > *:not(.pattern-node-word) {
     -webkit-animation: pulse 10s ease-out infinite;
             animation: pulse 10s ease-out infinite;
-    -webkit-animation-delay: 0.3344s;
-            animation-delay: 0.3344s;
+    -webkit-animation-delay: 0.0369s;
+            animation-delay: 0.0369s;
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
             transform-origin: center center; }
@@ -1250,18 +1255,63 @@ a {
   background-color: transparent;
   overflow: hidden; }
   .panel-inner {
-    background-color: #fff; }
+    width: 100%;
+    height: 100vh; }
+  .panel .panel-node {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 22vh;
+    min-width: 11vh;
+    border-top: 3px solid #DA6D74; }
+    .panel .panel-node.pull-left {
+      left: 22vh; }
+    .panel .panel-node.pull-right {
+      right: 22vh; }
+    .panel .panel-node.pull-up {
+      top: 22vh; }
+    .panel .panel-node.pull-down {
+      bottom: 22vh; }
+    @media (max-width: 1400px) {
+      .panel .panel-node.pull-left {
+        left: 11vh; }
+      .panel .panel-node.pull-right {
+        right: 11vh; }
+      .panel .panel-node.pull-up {
+        top: 11vh; }
+      .panel .panel-node.pull-down {
+        bottom: 11vh; } }
+    @media (max-width: 768px) {
+      .panel .panel-node.pull-left {
+        left: 0; }
+      .panel .panel-node.pull-right {
+        right: 0; }
+      .panel .panel-node.pull-up {
+        top: 0; }
+      .panel .panel-node.pull-down {
+        bottom: 0; } }
+    .panel .panel-node.pull-center {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      .panel .panel-node.pull-center.pull-center {
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    .panel .panel-node h2 {
+      font-family: Libre Baskerville, serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: 1px; }
 
-.panel-intro .panel-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.panel-intro .panel-node {
   width: 280px;
-  padding: 10px; }
-  .panel-intro .panel-inner .wordmark {
+  padding: 10px;
+  background-color: #fff;
+  border-top: none; }
+  .panel-intro .panel-node .wordmark {
     width: 360px;
     max-width: 95vw;
     position: relative;
@@ -1269,10 +1319,10 @@ a {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-    .panel-intro .panel-inner .wordmark svg {
+    .panel-intro .panel-node .wordmark svg {
       display: block;
       overflow: visible; }
-  .panel-intro .panel-inner .link-list {
+  .panel-intro .panel-node .link-list {
     margin-top: 20px;
     -webkit-backface-visibility: hidden;
     -webkit-animation-name: nameFade;
@@ -1283,7 +1333,7 @@ a {
             animation-timing-function: ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
-    .panel-intro .panel-inner .link-list a {
+    .panel-intro .panel-node .link-list a {
       font-size: 13px; }
 
 #logo-firstname,
@@ -1326,3 +1376,19 @@ a {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center; }
+
+.panel-work .personal-node {
+  text-align: left;
+  min-height: 78vh;
+  z-index: 2; }
+  .panel-work .personal-node svg {
+    width: 30px; }
+
+.panel-work .professional-node {
+  text-align: right;
+  padding-left: 23vh;
+  z-index: 1; }
+  .panel-work .professional-node img {
+    width: 270px;
+    max-width: 100%;
+    margin-bottom: 10px; }

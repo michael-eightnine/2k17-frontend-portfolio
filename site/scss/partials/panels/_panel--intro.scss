@@ -1,9 +1,9 @@
 .panel-intro {
-
-	.panel-inner {
-		@include absCenter;
+	.panel-node {
 		width: 280px;
 		padding: 10px;
+		background-color: #fff;
+		border-top: none; //override --base.scss
 
 		.wordmark {
 			width: 360px;

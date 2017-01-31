@@ -1,0 +1,25 @@
+.panel-work {
+	.personal-node {
+		text-align: left;
+		min-height: 78vh;
+		z-index: 2;
+
+		//icons
+		svg {
+			width: 30px;
+		}
+	}
+
+	.professional-node {
+			text-align: right;
+			padding-left: 23vh;
+
+			z-index: 1; //pull behind personal node
+
+			img {
+				width: 270px;
+				max-width: 100%;
+				margin-bottom: 10px;
+			}
+	}
+}
